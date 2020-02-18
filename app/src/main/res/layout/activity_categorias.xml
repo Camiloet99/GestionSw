@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_image"
+    android:orientation="vertical"
+    tools:context=".Actividades.CategoriasActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:title="Categorías"
+        app:titleTextColor="@color/common_google_signin_btn_text_dark_default" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="224dp"
+        android:layout_marginLeft="50px"
+        android:layout_marginTop="100px"
+        android:layout_marginRight="50px"
+        android:background="@drawable/blanco"
+        android:paddingTop="50px"
+        android:paddingBottom="50px"
+        android:src="@drawable/cat" />
+
+    <TextView
+        android:id="@+id/txtCat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30px"
+        android:layout_marginTop="20px"
+        android:layout_marginRight="30px"
+        android:fontFamily="@font/actor"
+        android:textAlignment="center"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="20px"
+        android:paddingTop="40px"
+        android:paddingRight="20px">
+
+        <Button
+            android:id="@+id/catRecursosBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5px"
+            android:layout_weight="1"
+            android:background="@drawable/button_round"
+            android:text="Recursos"
+            android:textAllCaps="false"
+            android:textColor="@color/common_google_signin_btn_text_dark_pressed" />
+
+        <Button
+            android:id="@+id/catHogarBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5px"
+            android:layout_weight="1"
+            android:background="@drawable/button_round"
+            android:text="Hogar"
+            android:textAllCaps="false"
+            android:textColor="@color/common_google_signin_btn_text_dark_pressed" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="20px"
+        android:paddingRight="20px">
+
+        <Button
+            android:id="@+id/catTrabajoBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5px"
+            android:layout_weight="1"
+            android:background="@drawable/button_round"
+            android:text="Trabajo"
+            android:textAllCaps="false"
+            android:textColor="@color/common_google_signin_btn_text_dark_pressed" />
+
+        <Button
+            android:id="@+id/catTragediaBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5px"
+            android:layout_weight="1"
+            android:background="@drawable/button_round"
+            android:text="Tragedia"
+            android:textAllCaps="false"
+            android:textColor="@color/common_google_signin_btn_text_dark_pressed" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="20px"
+        android:paddingRight="20px">
+
+        <Button
+            android:id="@+id/catRoboBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5px"
+            android:layout_weight="1"
+            android:background="@drawable/button_round"
+            android:text="Robo"
+            android:textAllCaps="false"
+            android:textColor="@color/common_google_signin_btn_text_dark_pressed" />
+
+        <Button
+            android:id="@+id/catOtrosBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5px"
+            android:layout_weight="1"
+            android:background="@drawable/button_round"
+            android:text="Otros"
+            android:textAllCaps="false"
+            android:textColor="@color/common_google_signin_btn_text_dark_pressed" />
+    </LinearLayout>
+
+</LinearLayout>

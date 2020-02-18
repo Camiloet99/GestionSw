@@ -7,10 +7,13 @@
          Google Maps Android API v2, but you must specify either coarse or fine
          location permissions for the 'MyLocation' functionality. 
     -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
     <uses-feature android:name="android.hardware.location.gps" />
 
     <application
@@ -20,7 +23,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".Actividades.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -43,18 +46,23 @@
             android:resource="@array/preloaded_fonts" />
 
         <activity
-            android:name=".MapsActivity"
-            android:label="@string/title_activity_maps" />
-        <activity
-            android:name=".NavigationActivity"
+            android:name=".Actividades.NavigationActivity"
             android:label="@string/title_activity_navigation"
-            android:parentActivityName=".MainActivity"
+            android:parentActivityName=".Actividades.MainActivity"
             android:theme="@style/AppTheme">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.usuario.needinghelp.MainActivity" />
+                android:value="com.example.usuario.needinghelp.Actividades.MainActivity" />
         </activity>
-        <activity android:name=".PeticionActivity"></activity>
+        <activity android:name=".Actividades.PeticionActivity" />
+        <activity android:name=".Actividades.PruebaActivity" />
+        <activity android:name=".Actividades.ContinuarActivity" />
+        <activity android:name=".Actividades.InicioSesionActivity" />
+        <activity android:name=".Actividades.CategoriasActivity" />
+        <activity
+            android:name=".Actividades.MapsActivity2"
+            android:label="@string/title_activity_maps2" />
+        <activity android:name=".PerfilActivity"></activity>
     </application>
 
 </manifest>

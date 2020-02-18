@@ -1,184 +1,191 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearL"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PeticionActivity">
+    android:background="#008BFF"
+    android:orientation="vertical"
+    tools:context=".Actividades.PeticionActivity">
 
-    <TableLayout
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar2"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:title="Categoría"
+        app:titleTextColor="@color/common_google_signin_btn_text_dark_default" />
 
-        <TableRow
-            android:layout_width="288dp"
-            android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="70px"
+        android:background="@drawable/background_image"
+        android:orientation="vertical"
+        android:paddingLeft="70px"
+        android:paddingTop="70px"
+        android:paddingRight="70px">
 
-            <TextView
-                android:id="@+id/textView13"
-                android:layout_width="370dp"
-                android:layout_height="wrap_content"
-                android:paddingTop="70px"
-                android:text="Creación de la petición"
-                android:textAlignment="center"
-                android:textColor="@color/colorPrimaryDark"
-                android:textSize="24sp"
-                android:textStyle="bold" />
-        </TableRow>
-
-        <TableRow
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150px"
+            android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/textView10"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="60px"
-                android:layout_marginTop="20px"
-                android:text="Categoría:"
-                android:textAlignment="textStart" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <Spinner
-                android:id="@+id/spinnerSp"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="60px" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <TextView
-                android:id="@+id/textView11"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="60px"
-                android:text="Nombre de la petición:" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <EditText
-                android:id="@+id/nomTxt"
-                android:layout_width="331dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="60px"
-                android:ems="10"
-                android:inputType="textPersonName" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <TextView
-                android:id="@+id/textView12"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="60px"
-                android:text="Descripción:" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <EditText
-                android:id="@+id/descTxt"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="60px"
-                android:ems="10"
-                android:inputType="textPersonName" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <TextView
-                android:id="@+id/textView14"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="60px"
-                android:text="Latitud:" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <EditText
-                android:id="@+id/latTxt"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="60px"
-                android:ems="10"
-                android:inputType="numberSigned" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <TextView
-                android:id="@+id/textView15"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="60px"
-                android:text="Longitud:" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <EditText
-                android:id="@+id/lonTxt"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="60px"
-                android:ems="10"
-                android:inputType="numberSigned" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <Button
-                android:id="@+id/ubAcbttn"
-                android:layout_width="260dp"
                 android:layout_height="match_parent"
-                android:fontFamily="@font/actor"
-                android:text="Usar ubicación actual"
-                android:textAllCaps="false"
-                android:textStyle="bold" />
+                android:orientation="horizontal">
 
-        </TableRow>
+                <Button
+                    android:id="@+id/roboBtn"
+                    android:layout_width="200px"
+                    android:layout_height="280px"
+                    android:layout_marginRight="10px"
+                    android:layout_weight="1"
+                    android:background="@drawable/robo"
+                    android:fontFamily="@font/acme"
+                    android:text="Robo"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorAccent"
+                    android:textStyle="bold|italic" />
 
-        <TableRow
+                <Button
+                    android:id="@+id/casaBtn"
+                    android:layout_width="200px"
+                    android:layout_height="280px"
+                    android:layout_marginRight="10px"
+                    android:layout_weight="1"
+                    android:background="@drawable/casa"
+                    android:fontFamily="@font/acme"
+                    android:text="Casa"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold|italic" />
+
+                <Button
+                    android:id="@+id/recursosBtn"
+                    android:layout_width="200px"
+                    android:layout_height="280px"
+                    android:layout_weight="1"
+                    android:background="@drawable/recursos"
+                    android:fontFamily="@font/acme"
+                    android:text="Recursos"
+                    android:textAllCaps="false"
+                    android:textStyle="bold|italic" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40px"
+            android:orientation="vertical">
 
-            <Button
-                android:id="@+id/petBtn"
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/accidenteBtn"
+                    android:layout_width="200px"
+                    android:layout_height="280px"
+                    android:layout_marginRight="10px"
+                    android:layout_weight="1"
+                    android:background="@drawable/tragedia"
+                    android:fontFamily="@font/acme"
+                    android:text="Accidente"
+                    android:textAllCaps="false"
+                    android:textStyle="bold|italic" />
+
+                <Button
+                    android:id="@+id/trabajoBtn"
+                    android:layout_width="200px"
+                    android:layout_height="280px"
+                    android:layout_weight="1"
+                    android:background="@drawable/trabajo"
+                    android:fontFamily="@font/acme"
+                    android:text="Trabajo"
+                    android:textAllCaps="false"
+                    android:textStyle="bold|italic" />
+
+                <Button
+                    android:id="@+id/otrosBtn"
+                    android:layout_width="200px"
+                    android:layout_height="280px"
+                    android:layout_marginLeft="10px"
+                    android:layout_weight="1"
+                    android:background="@drawable/hands_icono"
+                    android:fontFamily="@font/acme"
+                    android:text="Otros"
+                    android:textAllCaps="false"
+                    android:textStyle="bold|italic" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/ubTx"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40px"
+            android:layout_marginBottom="20px"
+            android:text="Ubicación actual:"
+            android:textAlignment="center"
+            android:textColor="@color/common_google_signin_btn_text_dark_default"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/dirTxt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/actor"
-                android:text="Mandar petición"
-                android:textAllCaps="false"
-                android:textStyle="bold" />
-        </TableRow>
+                android:layout_marginBottom="50px"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textSize="18sp" />
+        </LinearLayout>
 
-    </TableLayout>
-</RelativeLayout>
+        <EditText
+            android:id="@+id/descTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60px"
+            android:layout_marginTop="50px"
+            android:layout_marginRight="60px"
+            android:background="@drawable/edit_round"
+            android:ems="10"
+            android:hint="Descripción:"
+            android:inputType="textPersonName"
+            android:padding="10px"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/petBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100px"
+            android:layout_marginTop="40px"
+            android:layout_marginRight="100px"
+            android:background="@drawable/button_round"
+            android:text="Mandar petición"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+    </LinearLayout>
+
+</LinearLayout>
